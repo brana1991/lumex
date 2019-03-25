@@ -7,12 +7,19 @@ body {
 }
 p.flex {
     display: flex;
+    justify-content: space-between;
+    margin: 0%;
 }
-p.flex .part {
-    flex: 1;
+p.flex .part1 {
     text-align: center;
-    align-content: stretch;
+    font-size: 16px;
 }
+p.flex .part1 a {
+    text-decoration: none;
+    color: #333333;
+    position: relative;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Oswald', sans-serif;
 }
@@ -45,6 +52,7 @@ h2.widget-title {
     border-left: none;
     border-right: none;
     border-top: none;
+    padding: 3px;
 }
 .wpcf7-form input[type="submit"] {
     width: 100%;
@@ -57,4 +65,27 @@ h2.widget-title {
 }
 .centar {
     text-align: centar;
+}
+div.site-info {
+    display: flex;
+    font-size: 16px;
+}
+.site-info .part {
+    flex:1;
+}
+ul#menu-footer-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul#menu-footer-menu a {
+    font-size: 14px;
+    color: #333333;
+    text-decoration: none;
+}
+.style-svg {
+    display: block !important;
+}
+h5.header5 {
+    font-size: 16px;
 }

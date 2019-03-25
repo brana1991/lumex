@@ -143,7 +143,13 @@ function lumex_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'lumex_scripts' );
+add_action( 'cc_mime_types', 'lumex_scripts' );
+
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 
 /**
  * Implement the Custom Header feature.
