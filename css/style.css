@@ -1,0 +1,60 @@
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Oswald', sans-serif;
+ */
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+p.flex {
+    display: flex;
+}
+p.flex .part {
+    flex: 1;
+    text-align: center;
+    align-content: stretch;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oswald', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    width: 1200px;
+    margin: 10px auto;
+}
+
+footer .widget-column {
+    display: flex;
+}
+footer .widget {
+    flex: 1;
+}
+footer section:last-child {
+    flex: 2 !important;
+}
+h2.widget-title {
+    font-size: 18px !important;
+}
+.wpcf7-form p {
+    width: 100%;
+}
+.wpcf7-form p input,
+.wpcf7-form p textarea {
+    font-family: 'Poppins', sans-serif !important;
+    width: 100% !important;
+    font-size: 14px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.wpcf7-form input[type="submit"] {
+    width: 100%;
+    padding:18px;
+    background: #333333;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif !important;
+}
+.centar {
+    text-align: center;
+}
