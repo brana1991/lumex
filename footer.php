@@ -32,7 +32,7 @@
                 <?php endif; ?>
 		<div class="site-info">
             <article class="part">
-                © 2019, <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lumex' ) ); ?>">Lumexlight</a>, all rights reserved.
+                © 2019, <a href="<?php echo esc_url( __( '#', 'lumex' ) ); ?>">Lumexlight</a>, all rights reserved.
             </article>
             <article class="part">
                 <p class="centar flex">
