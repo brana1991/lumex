@@ -31,17 +31,15 @@
 
                 <?php endif; ?>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lumex' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'lumex' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'lumex' ), 'lumex', '<a href="http://underscores.me/">lumex</a>' );
-				?>
+            <article class="part">
+                © 2019, <a href="<?php echo esc_url( __( '#', 'lumex' ) ); ?>">Lumexlight</a>, all rights reserved.
+            </article>
+            <article class="part">
+                <p class="centar flex">
+                    <span class="part1"><a href='#'>Privacy Policy</a></span>
+                    <span class="part1"><a href='#'>Terms and Conditions</a></span>
+                    <span class="part1"><a href='#'>Cookie Policy</a></span></p>
+            </article>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -4,15 +4,120 @@ font-family: 'Oswald', sans-serif;
  */
 body {
     font-family: 'Poppins', sans-serif !important;
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width:100%;
 }
 p.flex {
     display: flex;
+    justify-content: space-between;
+    margin: 0;
 }
-p.flex .part {
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex-about {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-con {
+    display: flex;
+}
+.site-title,
+.about-title-two,
+.about-title-location {
+    font-size: 44px;
+    font-family: 'Oswald', sans-serif;
+    padding: 40px 40px 0 40px;
+    color: #333;
+}
+.about-subtitle {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.donja-linija::after {
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 1px;
+    background: #333;
+    bottom: -35%;
+    left: 0;
+}
+.about-title-two {
+    position: relative;
+}
+.about-title-two::after {
+    content: '';
+    position: absolute;
+    width: 8%;
+    height: 1px;
+    background: #333;
+    bottom: -35%;
+    left: 46%;
+}
+.part-supp,
+.part {
     flex: 1;
-    text-align: center;
-    align-content: stretch;
 }
+.about-part {
+    width: 33%;
+    text-align: center;
+}
+.about-part h5 {
+    font-size: 20px;
+    color: #333;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+.about-part h5::after {
+    content: '';
+    position: absolute;
+    width: 7%;
+    height: 1px;
+    background: #333;
+    bottom: -70%;
+    left: 46%;
+}
+.flex-about p {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+p.about-mail {
+    color: #999999;
+    font-weight: 400;
+}
+.linija {
+     border-right: 1px solid #333;
+}
+.about .part {
+    padding: 0 40px;
+}
+.about .part p {
+    font-size: 14px;
+}
+.supp-text {
+    padding: 40px;
+    font-size: 14px;
+}
+p.flex .part1 {
+    text-align: center;
+    font-size: 16px;
+}
+p.flex .part1 a {
+    text-decoration: none;
+    color: #333333;
+    position: relative;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Oswald', sans-serif;
 }
@@ -21,7 +126,11 @@ h1,h2,h3,h4,h5,h6 {
     width: 1200px;
     margin: 10px auto;
 }
-
+.container-supp {
+    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+}
 footer .widget-column {
     display: flex;
 }
@@ -45,6 +154,7 @@ h2.widget-title {
     border-left: none;
     border-right: none;
     border-top: none;
+    padding: 3px;
 }
 .wpcf7-form input[type="submit"] {
     width: 100%;
@@ -55,6 +165,84 @@ h2.widget-title {
     font-weight: 600;
     font-family: 'Poppins', sans-serif !important;
 }
+.okolo-forma {
+    width: 70%;
+}
+.okolo-forma input[type="submit"] {
+    width: 50% !important;
+    padding: 10px;
+}
 .centar {
     text-align: center;
+}
+div.site-info {
+    display: flex;
+    font-size: 16px;
+}
+.site-info .part {
+    flex:1;
+}
+ul#menu-footer-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul#menu-footer-menu a {
+    font-size: 14px;
+    color: #333333;
+    text-decoration: none;
+}
+.style-svg {
+    display: block !important;
+}
+h5.header5 {
+    font-size: 16px;
+}
+a.link,
+a.project-link {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    color: #333333;
+    text-decoration: none;
+    padding: 11px 71px;
+    border: 1px solid #333;
+}
+a.project-link {
+    background: #333;
+    color: #fff;
+}
+section.project {
+    position: relative;
+}
+.project-box {
+    background: #fff;
+    padding: 40px 40px 60px;
+    text-align: center;
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+.project-box1 {
+    background: #fff;
+    padding: 40px 40px 60px;
+    text-align: center;
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+.project-title {
+    font-size: 44px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 10px 10px 10px;
+    color: #333;
+    margin: 0 20px 20px;
+}
+#post-150 h1.entry-title {
+    font-size: 44px;
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    position: absolute;
 }
